@@ -17,4 +17,4 @@ de aceitação. O ponto marcante do trabalho foi a possibilidade de aplica-lo em
 e não só no que foi proposto, também serviu como base para criação de outros dois sistemas corporativos
 da empresa. Evidenciou-se que sistemas de análise de dados integrados ao sistema de automação industrial
 oferecem confiabilidade, otimização da rotina, históricos e resultados em curto prazo. 
-Palavras-chave: business Intelligence; inovação; competitividade industrial; sistemas corporativos
+Palavras-chave: business Intelligence; inovação; competitividade industrial; sistemas corporativos 
