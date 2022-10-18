@@ -1,0 +1,21 @@
+#AJUSTE DOS DADOS
+dados[ , 2:6] <- lapply(dados[ , 2:6], function(x){ factor(x, 
+                                                           levels = c("1", "2", "3", "4", "5"),                                  
+                                                           labels = c("Discordo Totalmente", "Discordo", "Indiferente", "Concordo", "Concordo Totalmente"))})
+
+names(dados)[2:6] <- paste(names(dados)[2:6], itens$Texto, sep="_")
+
+
+install.packages("likert")
+library(likert)
+lik <- likert(as.data.frame(dados[ , 2:6]))
+
+# Op��o 1
+plot(lik, wrap = 80, text.size=5) + theme(axis.text.y = element_text(size="13"))
+
+# Op��o 2
+plot(lik, type = "heat", wrap = 60, text.size=3) + theme(axis.text.y = element_text( size="5"))
+
+#SEPARAR POR CATEGORIA
+lik2 <- likert(as.data.frame(dados[ , 2:6]), grouping = dados$Categ)
+plot(lik2, wrap = 60, text.size=4) + theme(axis.text.y = element_text(size="13"))
